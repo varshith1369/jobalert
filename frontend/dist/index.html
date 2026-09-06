@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#16a34a" />
+    <meta name="description" content="JobAlert India - Aggregated Central & State Govt, Banking, Defence, and Private Recruitment Notifications with Real-time Deadlines." />
+    <link rel="manifest" href="/manifest.json" />
+    <title>JobAlert India | Real-time Recruitment & Exam Calendar</title>
+    <script type="module" crossorigin src="/assets/index-B8MbB2Fl.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DqZRBlsr.css">
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-brand-500 selection:text-white">
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.log('Service Worker registration skipped/failed:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
